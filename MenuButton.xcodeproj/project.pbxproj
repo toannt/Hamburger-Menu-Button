@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E8F2C6CF1BE0C8B70003DD72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2C6CE1BE0C8B70003DD72 /* AppDelegate.swift */; };
+		E8F2C6D11BE0C8B70003DD72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2C6D01BE0C8B70003DD72 /* ViewController.swift */; };
+		E8F2C6D41BE0C8B70003DD72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8F2C6D21BE0C8B70003DD72 /* Main.storyboard */; };
+		E8F2C6D61BE0C8B70003DD72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8F2C6D51BE0C8B70003DD72 /* Assets.xcassets */; };
+		E8F2C6D91BE0C8B70003DD72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8F2C6D71BE0C8B70003DD72 /* LaunchScreen.storyboard */; };
+		E8F2C6E11BE0C8D00003DD72 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2C6E01BE0C8D00003DD72 /* MenuButton.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E8F2C6CB1BE0C8B70003DD72 /* MenuButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8F2C6CE1BE0C8B70003DD72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8F2C6D01BE0C8B70003DD72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E8F2C6D31BE0C8B70003DD72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8F2C6D51BE0C8B70003DD72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8F2C6D81BE0C8B70003DD72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8F2C6DA1BE0C8B70003DD72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8F2C6E01BE0C8D00003DD72 /* MenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8F2C6C81BE0C8B70003DD72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E8F2C6C21BE0C8B70003DD72 = {
+			isa = PBXGroup;
+			children = (
+				E8F2C6CD1BE0C8B70003DD72 /* MenuButton */,
+				E8F2C6CC1BE0C8B70003DD72 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8F2C6CC1BE0C8B70003DD72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8F2C6CB1BE0C8B70003DD72 /* MenuButton.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8F2C6CD1BE0C8B70003DD72 /* MenuButton */ = {
+			isa = PBXGroup;
+			children = (
+				E8F2C6CE1BE0C8B70003DD72 /* AppDelegate.swift */,
+				E8F2C6D01BE0C8B70003DD72 /* ViewController.swift */,
+				E8F2C6E01BE0C8D00003DD72 /* MenuButton.swift */,
+				E8F2C6D21BE0C8B70003DD72 /* Main.storyboard */,
+				E8F2C6D51BE0C8B70003DD72 /* Assets.xcassets */,
+				E8F2C6D71BE0C8B70003DD72 /* LaunchScreen.storyboard */,
+				E8F2C6DA1BE0C8B70003DD72 /* Info.plist */,
+			);
+			path = MenuButton;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8F2C6CA1BE0C8B70003DD72 /* MenuButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8F2C6DD1BE0C8B70003DD72 /* Build configuration list for PBXNativeTarget "MenuButton" */;
+			buildPhases = (
+				E8F2C6C71BE0C8B70003DD72 /* Sources */,
+				E8F2C6C81BE0C8B70003DD72 /* Frameworks */,
+				E8F2C6C91BE0C8B70003DD72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MenuButton;
+			productName = MenuButton;
+			productReference = E8F2C6CB1BE0C8B70003DD72 /* MenuButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8F2C6C31BE0C8B70003DD72 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Toan Nguyen";
+				TargetAttributes = {
+					E8F2C6CA1BE0C8B70003DD72 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = E8F2C6C61BE0C8B70003DD72 /* Build configuration list for PBXProject "MenuButton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8F2C6C21BE0C8B70003DD72;
+			productRefGroup = E8F2C6CC1BE0C8B70003DD72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8F2C6CA1BE0C8B70003DD72 /* MenuButton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8F2C6C91BE0C8B70003DD72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8F2C6D91BE0C8B70003DD72 /* LaunchScreen.storyboard in Resources */,
+				E8F2C6D61BE0C8B70003DD72 /* Assets.xcassets in Resources */,
+				E8F2C6D41BE0C8B70003DD72 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8F2C6C71BE0C8B70003DD72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8F2C6D11BE0C8B70003DD72 /* ViewController.swift in Sources */,
+				E8F2C6CF1BE0C8B70003DD72 /* AppDelegate.swift in Sources */,
+				E8F2C6E11BE0C8D00003DD72 /* MenuButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E8F2C6D21BE0C8B70003DD72 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8F2C6D31BE0C8B70003DD72 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E8F2C6D71BE0C8B70003DD72 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8F2C6D81BE0C8B70003DD72 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8F2C6DB1BE0C8B70003DD72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8F2C6DC1BE0C8B70003DD72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8F2C6DE1BE0C8B70003DD72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MenuButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.waterstudio.MenuButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E8F2C6DF1BE0C8B70003DD72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MenuButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.waterstudio.MenuButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8F2C6C61BE0C8B70003DD72 /* Build configuration list for PBXProject "MenuButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8F2C6DB1BE0C8B70003DD72 /* Debug */,
+				E8F2C6DC1BE0C8B70003DD72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8F2C6DD1BE0C8B70003DD72 /* Build configuration list for PBXNativeTarget "MenuButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8F2C6DE1BE0C8B70003DD72 /* Debug */,
+				E8F2C6DF1BE0C8B70003DD72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8F2C6C31BE0C8B70003DD72 /* Project object */;
+}

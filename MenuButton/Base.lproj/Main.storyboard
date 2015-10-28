@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MenuButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Psd-hU-nY4" customClass="MenuButton" customModule="MenuButton" customModuleProvider="target">
+                                <rect key="frame" x="270" y="78" width="60" height="60"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.48929495394100153" blue="0.55754340251043555" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="nQx-9I-HxU"/>
+                                    <constraint firstAttribute="width" constant="60" id="tuK-De-OWx"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                        <color key="value" red="0.22648210281260428" green="0.25914660929688738" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MH9-DC-QFy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erL-sl-r66" customClass="MenuButton" customModule="MenuButton" customModuleProvider="target">
+                                <rect key="frame" x="270" y="249" width="60" height="60"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.74771661072490525" blue="0.51784261869951287" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="TNQ-fc-VyC"/>
+                                    <constraint firstAttribute="width" constant="60" id="okI-MH-79B"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8kN-zK-mvV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QvD-1z-Trg" customClass="MenuButton" customModule="MenuButton" customModuleProvider="target">
+                                <rect key="frame" x="270" y="166" width="60" height="60"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.44534357509909739" green="0.68686888075566377" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="N9w-aP-Okm"/>
+                                    <constraint firstAttribute="width" constant="60" id="VRi-xo-Vp4"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="lineCapRound" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="slideLeftToRight" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="er1-kY-aQz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QvD-1z-Trg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="39H-Q0-I42"/>
+                            <constraint firstItem="QvD-1z-Trg" firstAttribute="top" secondItem="Psd-hU-nY4" secondAttribute="bottom" constant="28" id="6xe-PN-WAT"/>
+                            <constraint firstItem="erL-sl-r66" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PCA-4D-Qfw"/>
+                            <constraint firstItem="erL-sl-r66" firstAttribute="top" secondItem="QvD-1z-Trg" secondAttribute="bottom" constant="23" id="RbA-LN-kjE"/>
+                            <constraint firstItem="Psd-hU-nY4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qdP-2P-cic"/>
+                            <constraint firstItem="Psd-hU-nY4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="58" id="xlL-bI-ywx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
