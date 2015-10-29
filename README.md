@@ -23,3 +23,5 @@ Or you can make a button on your own by doing this:
   firstButton.cornerRadius = 10
   self.view.addSubview(firstButton)
 ```
+# License
+MIT license. See the `LICENSE` file for details.
