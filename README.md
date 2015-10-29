@@ -1,4 +1,4 @@
-# MenuButton
+# Hamburger Menu Button
 A hamburger menu button with full customization. Inspired by [VinhLe's idea on the Dribble](https://dribbble.com/shots/1626236-Dribbble-Menu)
 
 ![Preview]
