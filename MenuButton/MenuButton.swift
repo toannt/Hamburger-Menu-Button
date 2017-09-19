@@ -3,6 +3,7 @@
 //  Draw
 //
 //  Created by Toan Nguyen on 10/28/15.
+//  Converted to Swift 3 by Nikolay Khramchenko 9/19/2017
 //  Copyright © 2015 Toan Nguyen. All rights reserved.
 //
 
@@ -10,18 +11,18 @@ import UIKit
 import QuartzCore
 
 class MenuButton: UIButton {
-
+    
     var menuPath : CGPath {
-        let path = CGPathCreateMutable()
-        CGPathMoveToPoint(path, nil, thickness / 2, thickness / 2)
-        CGPathAddLineToPoint(path, nil, lineWidth - thickness / 2, thickness / 2)
+        let path = CGMutablePath()
+        path.move(to: CGPoint(x: thickness/2, y: thickness/2))
+        path.addLine(to: CGPoint(x: lineWidth-thickness/2, y: thickness/2))
         return path
     }
     
     var sidePath: CGPath {
-        let path = CGPathCreateMutable()
-        CGPathMoveToPoint(path, nil, 0, self.bounds.height / 2)
-        CGPathAddLineToPoint(path, nil, self.bounds.width, self.bounds.height/2)
+        let path = CGMutablePath()
+        path.move(to: CGPoint(x: 0, y: self.bounds.height / 2))
+        path.addLine(to: CGPoint(x: self.bounds.width, y: self.bounds.height/2))
         return path
     }
     
@@ -59,7 +60,7 @@ class MenuButton: UIButton {
         }
     }
     
-    @IBInspectable var strokeColor : UIColor = UIColor.whiteColor(){
+    @IBInspectable var strokeColor : UIColor = UIColor.white {
         didSet{
             self.updateSubLayers()
         }
@@ -78,9 +79,9 @@ class MenuButton: UIButton {
     }
     
     
-    override var selected: Bool{
+    override var isSelected: Bool{
         didSet{
-            self.showMenu(self.selected)
+            self.showMenu(isShow: self.isSelected);
         }
     }
     
@@ -103,7 +104,7 @@ class MenuButton: UIButton {
     
     func setups(){
         sideLayer.opacity = 0.2
-        sideLayer.strokeColor = UIColor.blackColor().CGColor
+        sideLayer.strokeColor = UIColor.black.cgColor
         if slideLeftToRight {
             sideLayer.strokeStart = 0.0
             sideLayer.strokeEnd = 0.0
@@ -130,16 +131,16 @@ class MenuButton: UIButton {
             sideAnim.beginTime = CACurrentMediaTime() + 0.1
             sideAnim.toValue = slideLeftToRight ? 0.6 : 0.4
             sideAnim.fillMode = kCAFillModeBackwards
-            sideLayer.applyAnimation(sideAnim)
+            sideLayer.applyAnimation(animation: sideAnim)
             
-            for (idx, layer) in [topLayer, midLayer, bottomLayer].enumerate(){
+            for (idx, layer) in [topLayer, midLayer, bottomLayer].enumerated(){
                 let anim = CABasicAnimation(keyPath: slideLeftToRight ? "strokeEnd" : "strokeStart")
                 anim.toValue = slideLeftToRight ? 0.3 : 0.7
                 anim.duration = animateDuration
                 anim.fillMode = kCAFillModeBackwards
                 anim.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
                 anim.beginTime = CACurrentMediaTime() + Double(idx) * animateDelay
-                layer.applyAnimation(anim)
+                layer.applyAnimation(animation: anim)
             }
             
         }else{
@@ -148,16 +149,16 @@ class MenuButton: UIButton {
             sideAnim.beginTime = CACurrentMediaTime() + 0.1
             sideAnim.toValue = slideLeftToRight ? 0.0 : 1.0
             sideAnim.fillMode = kCAFillModeBackwards
-            sideLayer.applyAnimation(sideAnim)
+            sideLayer.applyAnimation(animation: sideAnim)
             
-            for (idx, layer) in [topLayer, midLayer, bottomLayer].enumerate(){
+            for (idx, layer) in [topLayer, midLayer, bottomLayer].enumerated(){
                 let anim = CABasicAnimation(keyPath: slideLeftToRight ? "strokeEnd" : "strokeStart")
                 anim.toValue = slideLeftToRight ? 1.0 : 0.0
                 anim.duration = animateDuration
                 anim.fillMode = kCAFillModeBackwards
                 anim.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
                 anim.beginTime = CACurrentMediaTime() + Double(idx) * animateDelay
-                layer.applyAnimation(anim)
+                layer.applyAnimation(animation: anim)
             }
         }
     }
@@ -165,12 +166,12 @@ class MenuButton: UIButton {
     
     func updateSubLayers(){
         let path = self.menuPath
-        let strokingPath = CGPathCreateCopyByStrokingPath(path, nil, thickness, CGLineCap.Round, CGLineJoin.Miter, 10)
-        let bounds = CGPathGetPathBoundingBox(strokingPath)
+        let strokingPath = path.copy(strokingWithWidth: thickness, lineCap: CGLineCap.round, lineJoin: CGLineJoin.miter, miterLimit: 10)
+        let bounds = strokingPath.boundingBox
         for layer in [topLayer, midLayer, bottomLayer] {
             layer.path = path
             layer.bounds = bounds
-            layer.strokeColor = self.strokeColor.CGColor
+            layer.strokeColor = self.strokeColor.cgColor
             layer.lineWidth = thickness
             layer.lineCap = lineCapRound ? kCALineCapRound : kCALineCapSquare
         }
@@ -194,10 +195,11 @@ extension CALayer {
     func applyAnimation(animation: CABasicAnimation) {
         let copy = animation.copy() as! CABasicAnimation
         if copy.fromValue == nil {
-            copy.fromValue = self.presentationLayer()!.valueForKeyPath(copy.keyPath!)
+            copy.fromValue = self.presentation()!.value(forKeyPath: copy.keyPath!)
         }
-        self.addAnimation(copy, forKey: copy.keyPath)
+        self.add(copy, forKey: copy.keyPath)
         self.setValue(copy.toValue, forKeyPath:copy.keyPath!)
     }
 }
+
 

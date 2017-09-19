@@ -12,7 +12,7 @@
 		E8F2C6D41BE0C8B70003DD72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8F2C6D21BE0C8B70003DD72 /* Main.storyboard */; };
 		E8F2C6D61BE0C8B70003DD72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8F2C6D51BE0C8B70003DD72 /* Assets.xcassets */; };
 		E8F2C6D91BE0C8B70003DD72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8F2C6D71BE0C8B70003DD72 /* LaunchScreen.storyboard */; };
-		E8F2C6E11BE0C8D00003DD72 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2C6E01BE0C8D00003DD72 /* MenuButton.swift */; settings = {ASSET_TAGS = (); }; };
+		E8F2C6E11BE0C8D00003DD72 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F2C6E01BE0C8D00003DD72 /* MenuButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +98,7 @@
 				TargetAttributes = {
 					E8F2C6CA1BE0C8B70003DD72 = {
 						CreatedOnToolsVersion = 7.0.1;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -256,6 +257,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.waterstudio.MenuButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -267,6 +269,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.waterstudio.MenuButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -289,6 +292,7 @@
 				E8F2C6DF1BE0C8B70003DD72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

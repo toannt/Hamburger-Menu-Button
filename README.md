@@ -12,16 +12,17 @@ You can config the looks of the button through Xcode Inspector
 
 Or you can make a button on your own by doing this:
 ```
-  let firstButton = MenuButton(frame: CGRectMake(100, 100, 60, 60))
-  firstButton.addTarget(self, action: "buttonClick:", forControlEvents: UIControlEvents.TouchUpInside)
-  firstButton.lineWidth = 30
-  firstButton.lineMargin = 12
-  firstButton.lineCapRound = true
-  firstButton.thickness = 6
-  firstButton.slideLeftToRight = false
-  firstButton.backgroundColor = UIColor.purpleColor()
-  firstButton.cornerRadius = 10
-  self.view.addSubview(firstButton)
+    let firstButton = MenuButton(frame: CGRect(x: 0, y: 0, width: 60, height: 60))
+    firstButton.center = CGPoint(x: self.view.bounds.width/2, y: 350)
+    firstButton.addTarget(self, action: #selector(ViewController.buttonClick(_:)), for: UIControlEvents.touchUpInside)
+    firstButton.lineWidth = 30
+    firstButton.lineMargin = 12
+    firstButton.lineCapRound = true
+    firstButton.thickness = 6
+    firstButton.slideLeftToRight = false
+    firstButton.backgroundColor = UIColor.purple
+    firstButton.cornerRadius = 10
+    self.view.addSubview(firstButton)
 ```
 # License
 MIT license. See the `LICENSE` file for details.

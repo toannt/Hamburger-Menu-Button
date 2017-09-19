@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,13 +17,12 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Psd-hU-nY4" customClass="MenuButton" customModule="MenuButton" customModuleProvider="target">
-                                <rect key="frame" x="270" y="78" width="60" height="60"/>
-                                <animations/>
-                                <color key="backgroundColor" red="1" green="0.48929495394100153" blue="0.55754340251043555" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="157.5" y="78" width="60" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.48929495394100153" blue="0.55754340251043555" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="nQx-9I-HxU"/>
                                     <constraint firstAttribute="width" constant="60" id="tuK-De-OWx"/>
@@ -29,7 +32,7 @@
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
-                                        <color key="value" red="0.22648210281260428" green="0.25914660929688738" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.22648210281260428" green="0.25914660929688738" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -37,9 +40,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erL-sl-r66" customClass="MenuButton" customModule="MenuButton" customModuleProvider="target">
-                                <rect key="frame" x="270" y="249" width="60" height="60"/>
-                                <animations/>
-                                <color key="backgroundColor" red="1" green="0.74771661072490525" blue="0.51784261869951287" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="157.5" y="249" width="60" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.74771661072490525" blue="0.51784261869951287" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="TNQ-fc-VyC"/>
                                     <constraint firstAttribute="width" constant="60" id="okI-MH-79B"/>
@@ -49,9 +51,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QvD-1z-Trg" customClass="MenuButton" customModule="MenuButton" customModuleProvider="target">
-                                <rect key="frame" x="270" y="166" width="60" height="60"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.44534357509909739" green="0.68686888075566377" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="157.5" y="166" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.44534357509909739" green="0.68686888075566377" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="N9w-aP-Okm"/>
                                     <constraint firstAttribute="width" constant="60" id="VRi-xo-Vp4"/>
@@ -68,8 +69,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="QvD-1z-Trg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="39H-Q0-I42"/>
                             <constraint firstItem="QvD-1z-Trg" firstAttribute="top" secondItem="Psd-hU-nY4" secondAttribute="bottom" constant="28" id="6xe-PN-WAT"/>
