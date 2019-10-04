@@ -1,14 +1,12 @@
 # Hamburger Menu Button
 A hamburger menu button with full customization. Inspired by [VinhLe's idea on the Dribble](https://dribbble.com/shots/1626236-Dribbble-Menu)
 
-![Preview]
-(./Preview.gif)
+![Preview](./Preview.gif)
 
 # How to use it
 You can config the looks of the button through Xcode Inspector
 
-![Xcode Inspector]
-(./Inspector.gif)
+![Xcode Inspector](./Inspector.gif)
 
 Or you can make a button on your own by doing this:
 ```
